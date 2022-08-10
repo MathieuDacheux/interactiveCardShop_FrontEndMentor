@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr-Fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/css/style.css">
+    <link rel="shortcut icon" href="./public/assets/icons/favicon-32x32.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+    <script defer src="./public/js/script.js"></script>
+    <title>Interactive Card Component</title>
+</head>
+<body>
+    <main>
+        <section id="card">
+            <div class="backCard">
+                <p class="backShortNumber">000</p>
+            </div>
+            <div class="frontCard">
+                <img src="./public/assets/img/card-logo.svg" alt="Logo de la carte bancaire">
+                <p class="frontLongNumber">0000 0000 0000 0000</p>
+                <p class="frontName">Jane Applessed</p>
+                <p class="frontDate"><span class="frontMonth">00</span>/<span class="frontYears">00</span></p>
+            </div>
+        </section>
+        <section id="form">
+            <form>
+                <label for="cardholder">Cardholder Name</label>
+                <input type="text" id="nameHolder" placeholder="e.g. Jane Appleseed" maxlength="30" required value="">
+                <label for="cardNumber">Card Number</label>
+                <input type="number" id="cardNumber" placeholder="e.g. 1234 5678 9123 0000" required value="">
+                <div class="flexContainer">
+                    <div class="flexContainerLeft">
+                        <label for="expirationDate">Exp. Date (MM/YY)</label>
+                        <input type="number" id="monthCard" placeholder="MM" required value="">
+                        <input type="number" id="yearCard" placeholder="YY" required value="">
+                    </div>
+                    <div class="flexContainerRight">
+                        <label for="secretCode">CVC</label>
+                        <input type="number" id="secretCode" placeholder="e.g. 123" required value="">
+                    </div>
+                </div>
+                <input type="button" value="Confirm" id="submit">
+            </form>
+            <div class="thanks hide">
+                <img src="./public/assets/icons/icon-complete.svg" alt="Icône de remerciement">
+                <h1>Thank You !</h1>
+                <p>We've added your card details</p>
+                <a href="https://mathieudacheux.github.io/portfolio/"><input type="button" value="Continue" id="submit"></a>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
